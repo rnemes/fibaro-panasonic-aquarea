@@ -1,0 +1,828 @@
+{
+  "name": "Panasonic Aquarea",
+  "output": "Panasonic_Aquarea",
+  "type": "com.fibaro.binarySwitch",
+  "apiVersion": "1.2",
+  "files": [
+    {
+      "name": "main",
+      "source": "src/main.lua",
+      "isMain": true,
+      "isOpen": true
+    }
+  ],
+  "initialProperties": {
+    "viewLayout": {
+      "$jason": {
+        "body": {
+          "header": {
+            "style": {
+              "height": "0"
+            },
+            "title": "quickApp_device_aquarea"
+          },
+          "sections": {
+            "items": [
+              {
+                "components": [
+                  {
+                    "name": "aqStatus",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Status",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqOutdoor",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Outdoor",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqBtnOn",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "ON",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqBtnOff",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Off",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqBtnRefresh",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Refresh",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqBtnHeat",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Heat",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqBtnCool",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Cool",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqBtnAuto",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Auto",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqZone1",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Zone 1",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "max": "55",
+                    "min": "-5",
+                    "step": "1",
+                    "name": "aqZone1Slider",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "",
+                    "type": "slider",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqZone1On",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Zone 1 on",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqZone1Off",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Zone 1 off",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqZone2",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Zone 2",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "max": "55",
+                    "min": "-5",
+                    "step": "1",
+                    "name": "aqZone2Slider",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "",
+                    "type": "slider",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqZone2On",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Zone 2 on",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqZone2Off",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Zone 2 off",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqTank",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Hot water",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "max": "65",
+                    "min": "40",
+                    "step": "1",
+                    "name": "aqTankSlider",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "",
+                    "type": "slider",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqTankOn",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Hot water on",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqTankOff",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Hot water off",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqDhwOn",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Force hot water",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqDhwOff",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Stop forcing",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqExtras",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Quiet / Powerful",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqQ0",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "Quiet off",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqQ1",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "Q1",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqQ2",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "Q2",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqQ3",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "Q3",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "aqP0",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Powerful off",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqP30",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "30 min",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "aqP60",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "60 min",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqEnergy",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Energy",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "aqDebug",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Raw data log: off",
+                    "type": "button",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              }
+            ]
+          }
+        },
+        "head": {
+          "title": "quickApp_device_aquarea"
+        }
+      }
+    },
+    "uiCallbacks": [
+      {
+        "callback": "aqOn",
+        "eventType": "onReleased",
+        "name": "aqBtnOn"
+      },
+      {
+        "callback": "aqOff",
+        "eventType": "onReleased",
+        "name": "aqBtnOff"
+      },
+      {
+        "callback": "aqRefreshPressed",
+        "eventType": "onReleased",
+        "name": "aqBtnRefresh"
+      },
+      {
+        "callback": "aqHeat",
+        "eventType": "onReleased",
+        "name": "aqBtnHeat"
+      },
+      {
+        "callback": "aqCool",
+        "eventType": "onReleased",
+        "name": "aqBtnCool"
+      },
+      {
+        "callback": "aqAuto",
+        "eventType": "onReleased",
+        "name": "aqBtnAuto"
+      },
+      {
+        "callback": "aqZone1Slider",
+        "eventType": "onChanged",
+        "name": "aqZone1Slider"
+      },
+      {
+        "callback": "aqZone1On",
+        "eventType": "onReleased",
+        "name": "aqZone1On"
+      },
+      {
+        "callback": "aqZone1Off",
+        "eventType": "onReleased",
+        "name": "aqZone1Off"
+      },
+      {
+        "callback": "aqZone2Slider",
+        "eventType": "onChanged",
+        "name": "aqZone2Slider"
+      },
+      {
+        "callback": "aqZone2On",
+        "eventType": "onReleased",
+        "name": "aqZone2On"
+      },
+      {
+        "callback": "aqZone2Off",
+        "eventType": "onReleased",
+        "name": "aqZone2Off"
+      },
+      {
+        "callback": "aqTankSlider",
+        "eventType": "onChanged",
+        "name": "aqTankSlider"
+      },
+      {
+        "callback": "aqTankOn",
+        "eventType": "onReleased",
+        "name": "aqTankOn"
+      },
+      {
+        "callback": "aqTankOff",
+        "eventType": "onReleased",
+        "name": "aqTankOff"
+      },
+      {
+        "callback": "aqForceDhwOn",
+        "eventType": "onReleased",
+        "name": "aqDhwOn"
+      },
+      {
+        "callback": "aqForceDhwOff",
+        "eventType": "onReleased",
+        "name": "aqDhwOff"
+      },
+      {
+        "callback": "aqQuietOff",
+        "eventType": "onReleased",
+        "name": "aqQ0"
+      },
+      {
+        "callback": "aqQuiet1",
+        "eventType": "onReleased",
+        "name": "aqQ1"
+      },
+      {
+        "callback": "aqQuiet2",
+        "eventType": "onReleased",
+        "name": "aqQ2"
+      },
+      {
+        "callback": "aqQuiet3",
+        "eventType": "onReleased",
+        "name": "aqQ3"
+      },
+      {
+        "callback": "aqPowerfulOff",
+        "eventType": "onReleased",
+        "name": "aqP0"
+      },
+      {
+        "callback": "aqPowerful30",
+        "eventType": "onReleased",
+        "name": "aqP30"
+      },
+      {
+        "callback": "aqPowerful60",
+        "eventType": "onReleased",
+        "name": "aqP60"
+      },
+      {
+        "callback": "aqDebugToggle",
+        "eventType": "onReleased",
+        "name": "aqDebug"
+      }
+    ],
+    "quickAppVariables": [
+      {
+        "name": "Username",
+        "value": ""
+      },
+      {
+        "name": "password",
+        "value": ""
+      },
+      {
+        "name": "deviceName",
+        "value": ""
+      },
+      {
+        "name": "pollSeconds",
+        "value": "300"
+      },
+      {
+        "name": "appVersion",
+        "value": ""
+      },
+      {
+        "name": "loginUrl",
+        "value": ""
+      },
+      {
+        "name": "authCode",
+        "value": ""
+      },
+      {
+        "name": "debugRaw",
+        "value": "0"
+      },
+      {
+        "name": "energyStart",
+        "value": ""
+      }
+    ],
+    "typeTemplateInitialized": true
+  }
+}

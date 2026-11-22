@@ -1,0 +1,811 @@
+{
+  "name": "Panasonic ",
+  "output": "Panasonic",
+  "type": "com.fibaro.binarySwitch",
+  "apiVersion": "1.2",
+  "files": [
+    {
+      "name": "main",
+      "source": "src/main.lua",
+      "isMain": true,
+      "isOpen": true
+    }
+  ],
+  "initialProperties": {
+    "viewLayout": {
+      "$jason": {
+        "body": {
+          "header": {
+            "style": {
+              "height": "0"
+            },
+            "title": "quickApp_device_156"
+          },
+          "sections": {
+            "items": [
+              {
+                "components": [
+                  {
+                    "name": "labeltemp",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Temperature",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "btnOn",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "ON",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnOff",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Off",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "label",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Set Temperature",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "max": "100",
+                    "min": "0",
+                    "name": "slider",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "",
+                    "type": "slider",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "labelmode",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Mode",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "btnd",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Dry",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnC",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Cool",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnH",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Heat",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "btnA",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Auto",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnF",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Fan",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "labelfan",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Fan speed",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "btnf1",
+                        "style": {
+                          "weight": "0.20"
+                        },
+                        "text": "I",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnf2",
+                        "style": {
+                          "weight": "0.20"
+                        },
+                        "text": "II",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnf3",
+                        "style": {
+                          "weight": "0.20"
+                        },
+                        "text": "III",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnf4",
+                        "style": {
+                          "weight": "0.20"
+                        },
+                        "text": "IIII",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnf5",
+                        "style": {
+                          "weight": "0.20"
+                        },
+                        "text": "IIIII",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "labeleco",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Eco mode",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "btnqui",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Quiet",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnpowf",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Powerfull",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnau",
+                        "style": {
+                          "weight": "0.33"
+                        },
+                        "text": "Auto",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "labelfanu",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Swing mode",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "btnaufoff",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "off",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnswinau",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "auto",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "button4_3",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "⇦  ⇨",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "btnswupdo",
+                        "style": {
+                          "weight": "0.25"
+                        },
+                        "text": "⇧ ⇩",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "labelx",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Nanoe X ",
+                    "type": "label",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "name": "buttonxon",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Nanoe X on",
+                        "type": "button",
+                        "visible": true
+                      },
+                      {
+                        "name": "buttonxof",
+                        "style": {
+                          "weight": "0.50"
+                        },
+                        "text": "Nanoe  X off",
+                        "type": "button",
+                        "visible": true
+                      }
+                    ],
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "type": "horizontal"
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "bntindebugU",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Debug unit data",
+                    "type": "button",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "btnnow",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Debug get data now",
+                    "type": "button",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              },
+              {
+                "components": [
+                  {
+                    "name": "btnhis",
+                    "style": {
+                      "weight": "1.2"
+                    },
+                    "text": "Debug get history",
+                    "type": "button",
+                    "visible": true
+                  },
+                  {
+                    "style": {
+                      "weight": "0.5"
+                    },
+                    "type": "space"
+                  }
+                ],
+                "style": {
+                  "weight": "1.2"
+                },
+                "type": "vertical"
+              }
+            ]
+          }
+        },
+        "head": {
+          "title": "quickApp_device_156"
+        }
+      }
+    },
+    "uiCallbacks": [
+      {
+        "callback": "Onpressed",
+        "eventType": "onReleased",
+        "name": "btnOn"
+      },
+      {
+        "callback": "offpressed",
+        "eventType": "onReleased",
+        "name": "btnOff"
+      },
+      {
+        "callback": "onSliderChanged",
+        "eventType": "onChanged",
+        "name": "slider"
+      },
+      {
+        "callback": "drypressed",
+        "eventType": "onReleased",
+        "name": "btnd"
+      },
+      {
+        "callback": "coolpressed",
+        "eventType": "onReleased",
+        "name": "btnC"
+      },
+      {
+        "callback": "heatpressed",
+        "eventType": "onReleased",
+        "name": "btnH"
+      },
+      {
+        "callback": "aupressed",
+        "eventType": "onReleased",
+        "name": "btnA"
+      },
+      {
+        "callback": "fanpressed",
+        "eventType": "onReleased",
+        "name": "btnF"
+      },
+      {
+        "callback": "press1",
+        "eventType": "onReleased",
+        "name": "btnf1"
+      },
+      {
+        "callback": "presstwo",
+        "eventType": "onReleased",
+        "name": "btnf2"
+      },
+      {
+        "callback": "presstree",
+        "eventType": "onReleased",
+        "name": "btnf3"
+      },
+      {
+        "callback": "pressfour",
+        "eventType": "onReleased",
+        "name": "btnf4"
+      },
+      {
+        "callback": "pressfive",
+        "eventType": "onReleased",
+        "name": "btnf5"
+      },
+      {
+        "callback": "pressqui",
+        "eventType": "onReleased",
+        "name": "btnqui"
+      },
+      {
+        "callback": "Presspowf",
+        "eventType": "onReleased",
+        "name": "btnpowf"
+      },
+      {
+        "callback": "pressauf",
+        "eventType": "onReleased",
+        "name": "btnau"
+      },
+      {
+        "callback": "onfanspeed",
+        "eventType": "onReleased",
+        "name": "btnaufoff"
+      },
+      {
+        "callback": "pressedswingau",
+        "eventType": "onReleased",
+        "name": "btnswinau"
+      },
+      {
+        "callback": "pressedfantauleftright",
+        "eventType": "onReleased",
+        "name": "button4_3"
+      },
+      {
+        "callback": "pressedswingupdao",
+        "eventType": "onReleased",
+        "name": "btnswupdo"
+      },
+      {
+        "callback": "pressedonnano",
+        "eventType": "onReleased",
+        "name": "buttonxon"
+      },
+      {
+        "callback": "pressesoffnano",
+        "eventType": "onReleased",
+        "name": "buttonxof"
+      },
+      {
+        "callback": "turn2",
+        "eventType": "onReleased",
+        "name": "bntindebugU"
+      },
+      {
+        "callback": "getNow",
+        "eventType": "onReleased",
+        "name": "btnnow"
+      },
+      {
+        "callback": "getHis",
+        "eventType": "onReleased",
+        "name": "btnhis"
+      }
+    ],
+    "quickAppVariables": [
+      {
+        "name": "Username",
+        "value": ""
+      },
+      {
+        "name": "password",
+        "value": ""
+      },
+      {
+        "name": "Heat start temp",
+        "value": "29"
+      },
+      {
+        "name": "Cool start temp",
+        "value": "15"
+      },
+      {
+        "name": "Auto start temp",
+        "value": "20"
+      },
+      {
+        "name": "dry start temp",
+        "value": "25"
+      },
+      {
+        "name": "deviceName",
+        "value": ""
+      },
+      {
+        "name": "pollSeconds",
+        "value": "300"
+      },
+      {
+        "name": "appVersion",
+        "value": ""
+      },
+      {
+        "name": "loginUrl",
+        "value": ""
+      },
+      {
+        "name": "authCode",
+        "value": ""
+      },
+      {
+        "name": "energyStart",
+        "value": ""
+      }
+    ],
+    "typeTemplateInitialized": true
+  }
+}
